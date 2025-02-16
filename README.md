@@ -60,7 +60,7 @@ $ pip install -r requirements.txt
 ```
 
 Summary of one-time project setup:
-- [ ] Fork the project respository
+- [ x ] Fork the project respository
 - [ ] `cd` into your `projects` folder
 - [ ] Clone the project onto your machine
 - [ ] `cd` into the `snowman` folder
