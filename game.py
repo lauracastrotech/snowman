@@ -20,9 +20,6 @@ def snowman(snowman_word):
     'Sorry, you lose! The word was {snowman_word}' if the player loses
     """
     correct_letter_guess_statuses = build_letter_status_dict(snowman_word)
-    print(correct_letter_guess_statuses)
-    print(type(correct_letter_guess_statuses))
-
     wrong_guesses_list = []
    
     while len(wrong_guesses_list) < SNOWMAN_MAX_WRONG_GUESSES:
@@ -73,7 +70,6 @@ def get_letter_from_user(correct_letter_guess_statuses, wrong_guesses_list):
     while not valid_input:
         user_input_string = input("Guess a letter: ")
 
-        # print(correct_letter_guess_statuses[user_input_string])
         if not user_input_string.isalpha():
             print("You must input a letter!")
         elif len(user_input_string) > 1:
